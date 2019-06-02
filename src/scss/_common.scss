@@ -1,0 +1,24 @@
+.title {
+  position: relative;
+  font-size: 100px;
+  color: yellow;
+}
+
+.title::before,
+.title::after {
+  content: attr(data-content);
+  position: absolute;
+  mix-blend-mode: multiply;
+}
+
+.title::before {
+  top: -2px;
+  left: -2px;
+  color: magenta;
+}
+
+.title::after {
+  top: -5px;
+  left: 2px;
+  color: cyan;
+}
